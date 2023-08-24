@@ -45,10 +45,10 @@ Objevte úplně nové možnosti zachycování a organizování myšlenek s aplik
     height=80>][snap]
 
 [![GitHub release (nejnovější vydání)](https://img.shields.io/github/v/release/adil192/saber?label=vyd%C3%A1n%C3%AD)](https://github.com/adil192/saber/releases/latest)
-[![Flathub](https://img.shields.io/flathub/v/com.adilhanney.saber)](https://flathub.org/apps/details/com.adilhanney.saber)
-[![F-Droid](https://img.shields.io/f-droid/v/com.adilhanney.saber)](https://f-droid.org/en/packages/com.adilhanney.saber/)
+[![Flathub](https://img.shields.io/flathub/v/com.adilhanney.saber?label=Flathub)](https://flathub.org/apps/details/com.adilhanney.saber)
+[![F-Droid](https://img.shields.io/f-droid/v/com.adilhanney.saber?label=F-Droid)](https://f-droid.org/en/packages/com.adilhanney.saber/)
 [![Všechna vydání na GitHubu](https://img.shields.io/github/downloads/adil192/saber/total?label=sta%C5%BEen%C3%AD%20z%20GitHubu)](https://github.com/adil192/saber/releases)
-[![Flathub](https://img.shields.io/flathub/downloads/com.adilhanney.saber?label=Po%C4%8Det%20sta%C5%BEen%C3%AD%20na%20Flathubu)](https://flathub.org/cs/apps/details/com.adilhanney.saber)
+[![Flathub](https://img.shields.io/flathub/downloads/com.adilhanney.saber?label=sta%C5%BEen%C3%AD%20z%20Flathubu)](https://flathub.org/cs/apps/details/com.adilhanney.saber)
 [![Sponzoři na GitHubu](https://img.shields.io/github/sponsors/adil192)](https://github.com/sponsors/adil192)
 [![GitHub](https://img.shields.io/github/license/adil192/saber?label=sponzo%C5%99i)](https://github.com/adil192/saber/blob/main/LICENSE.md)
 [![codecov](https://codecov.io/gh/adil192/saber/branch/main/graph/badge.svg?token=EGQSN0THW2)](https://codecov.io/gh/adil192/saber)
@@ -64,9 +64,9 @@ Objevte úplně nové možnosti zachycování a organizování myšlenek s aplik
 </div>
 </details>
 
-## Features
+## Funkce
 
-Podívejte se na [#1 Saber progress][plán vývoje] (anglicky).
+Podívejte se na [#1 Plán vývoje aplikace Saber][progress] (anglicky).
 
 ## Instalace
 
@@ -102,7 +102,7 @@ Díky @soumyaDghosh je k dispozici neoficiální [snap][snap].
 
 Stažení a instalace `SaberInstaller_{verze}.exe` z nejnovějšího [Vydání][releases].
 
-Pokud dostáváte chybu ohledně chybějících ddl, ujistěte se, že máte instalované [Visual C++ Redistributable](https://learn.microsoft.com/cs-CZ/cpp/windows/latest-supported-vc-redist).
+Pokud dostáváte chybu ohledně chybějících ddl, ujistěte se, že máte nainstalované [Visual C++ Redistributable](https://learn.microsoft.com/cs-CZ/cpp/windows/latest-supported-vc-redist).
 
 #### iOS and macOS
 
@@ -140,16 +140,16 @@ se dá shrnout jako:
 `sudo apt install libsecret-1-dev libjsoncpp-dev`
 `flutter build linux`
 
-Toto je dostatečné pro použití na vlastím počítači, ale pokud chcete své sestaení distribuovat,
-budete potřebovat použitít předvídatelné prostředí: udělejte fork totoho repozitáře a použijte místo toho GitHub Action
-[Build for Linux](https://github.com/adil192/saber/actions/workflows/linux.yml).
+Toto je dostatečné pro použití na vlastním počítači, ale pokud chcete své sestavení distribuovat,
+budete potřebovat použít předvídatelné prostředí: udělejte fork tohoto repozitáře a použijte místo toho GitHub Action
+nazvaný [Build for Linux](https://github.com/adil192/saber/actions/workflows/linux.yml).
 
 #### Android
 
 `flutter build apk`
 
-Budete potřevoat vygenerovat a podepsat certifikát a vytvořit soubor `android/key.properties`.
-Více informací nahttps://docs.flutter.dev/deployment/android#create-an-upload-keystore
+Budete potřebovat vygenerovat a podepsat certifikát a vytvořit soubor `android/key.properties`.
+Více informací naleznete na https://docs.flutter.dev/deployment/android#create-an-upload-keystore
 
 Poznámka: vydání pro F-Droid jsou sestavena výrazně odlišně
 `./patches/remove_proprietary_dependencies.sh`
@@ -162,7 +162,7 @@ Poznámka: vydání pro F-Droid jsou sestavena výrazně odlišně
 Instalátor pro Windows je vytvořen pomocí [Inno Setup](https://jrsoftware.org/isinfo.php).
 Pro vytvoření vlastního instalátoru spusťte výše uvedený příkaz a následně upravte a spusťte
 [installers/desktop_inno_script.iss](https://github.com/adil192/saber/blob/main/installers/desktop_inno_script.iss)
-pomocí Inno Setup Compiler.
+pomocí programu Inno Setup Compiler.
 
 #### iOS and macOS
 
@@ -172,7 +172,7 @@ pomocí `flutter build ipa` nebo
 [sestavovat pro macOS](https://docs.flutter.dev/deployment/macos#create-a-build-archive-with-xcode)
 pomocí `flutter build macos`.
 
-Pokud nikoliv, udělejte fork tohoto repozitáře a použijte GitHub Action
+Pokud nikoliv, udělejte fork tohoto repozitáře a použijte GitHub Action nazvaný
 [Build for macOS and iOS](https://github.com/adil192/saber/actions/workflows/apple.yml).
 Alternativně následujte anglický YouTube tutoriál
 [How to compile a flutter application to iPhone with no mac (free | no jailbreak)](https://www.youtube.com/watch?v=m3_6z2wfHiY)
@@ -183,8 +183,8 @@ pro manuální sestavení s využitím [Codemagic](https://codemagic.io/start/).
 ## Odkazy
 
 - [Nextcloud server][nextcloud]
-- [Zásady ochrany osobních údajů (anglicky)][privacy]
-- [Licence][license]
+- [Zásady ochrany osobních údajů (anglicky)][privacy] ([český překlad][privacy_czech])
+- [Licence][license] ([český překlad](https://jxself.org/translations/gpl-3.cz.shtml))
 - [Vydání][releases]
 
 ## Překlady
@@ -291,36 +291,7 @@ Pokud máte rádi Saber, zvažte prosím jeho podporu pomocí
 - Hvězdičky pro projekt na GitHubu
 - Sponzorování prostřednictvím [GitHub Sponsors](https://github.com/sponsors/adil192)
 - Zaslání daru na [PayPal](https://paypal.me/adilhanney)
-- Zakoupení více místa na Nextcloud serveru: podívejte se na [Ceník](pricing.md) (v angličtině)
-
-## Poznámky pro vývojáře
-
-<details>
-<summary>Zobrazit/skrýt poznámky pro vývojáře</summary>
-
-- Když aktualizujete **verzi aplikace**:
-  - Spusťte `./scripts/apply_version.sh <název-verze> <kód-verze>`
-    (Pro více informací spusťte `./scripts/apply_version.sh --help`)
-  - Aktualizujte záznamy o změnách v `metadata/en-US/changelogs/`
-    a `flatpak/com.adilhanney.saber.metainfo.xml`,
-    a spusťte `dart scripts/translate_changelogs.dart`, jak je udáno skriptem.
-- Pokud aktualizujete **ikony**, spusťte tyto příkazy:
-  - Obecné: `dart run icons_launcher:create`
-  - Flatpak ikony: `cd assets/icon && ./resize-icon.sh`
-- Když aktualizujte **překlady**...
-  - Spusťte tyto příkazy:
-    - `dart run slang apply --locale=XX` pro případ, že potřebujete aplikovat _missing_translations.yaml
-    - `dart run slang`
-    - `dart run slang analyze --full`
-  - Pokud přidáváte nový jazyk, aktualizujte:
-    - `CFBundleLocalizations` v `ios/Runner/Info.plist`
-    - `CFBundleLocalizations` v `macos/Runner/Info.plist`
-    - `android/app/src/main/res/xml/locales_config.xml`
-    - `lib/data/locales.dart`
-    - `README.md` výše v sekci "Překlady".
-    - a spusťte `dart scripts/translate_changelogs.dart` pro překlad záznamu změn.
-
-</details>
+- Zakoupení více místa na Nextcloud serveru: podívejte se na [Ceník](pricing.md) ([česká verze](pricing-cs.md))
 
 [f-droid]: https://f-droid.org/packages/com.adilhanney.saber/
 [flathub]: https://flathub.org/cs/apps/details/com.adilhanney.saber
@@ -333,6 +304,7 @@ Pokud máte rádi Saber, zvažte prosím jeho podporu pomocí
 [nextcloud]: https://nc.saber.adil.hanney.org/
 
 [privacy]: https://github.com/adil192/saber/blob/main/privacy_policy.md
+[privacy_czech]: https://github.com/adil192/saber/blob/main/privacy_policy-cs.md
 [license]: https://github.com/adil192/saber/blob/main/LICENSE.md
 
 [releases]: https://github.com/adil192/saber/releases
